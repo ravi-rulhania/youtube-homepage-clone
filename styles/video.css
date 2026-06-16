@@ -4,7 +4,21 @@
   column-gap: 16px;
   row-gap: 40px;
 }
-
+@media (max-width: 750px) {
+  .video-preview-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 750px) and (max-width: 999px) {
+  .video-preview-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1000px) {
+  .video-preview-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
 .thumbnail-pic {
   width: 100%;
 }
